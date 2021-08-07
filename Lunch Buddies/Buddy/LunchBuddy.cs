@@ -21,19 +21,19 @@ namespace Lunch_Buddies
         public string Eat()
         {
             var restaurant = new Restaurant();
-            Console.WriteLine($"{FirstName} {LastName} is at {restaurant.RestaurantName} restaurant.");
+            Console.WriteLine($"\n\n{FirstName} {LastName} is at {restaurant.RestaurantName} restaurant.");
             return restaurant.RestaurantName;
         }
 
         public void Eat(string food)
         {
-            Console.WriteLine($"{FirstName} {LastName} ate {food} at the office today.");
+            Console.WriteLine($"\n\n{FirstName} {LastName} ate {food} at the office today.");
         }
 
         public void Eat(List<LunchBuddy> companions)
         {
                 var restaurant = new Restaurant();
-                Console.Write($"{FirstName} {LastName} is at {restaurant.RestaurantName} with ");
+                Console.Write($"\n\n{FirstName} {LastName} is at {restaurant.RestaurantName} with ");
                 for (var i = 0; i < companions.Count; i++)
                 {
                     if (FirstName == companions[i].FirstName)
@@ -56,7 +56,7 @@ namespace Lunch_Buddies
         public void Eat(string food, List<LunchBuddy> companions)
         {
             var restaurant = new Restaurant();
-            Console.WriteLine($"{FirstName} {LastName} ordered {food} at {restaurant.RestaurantName}.");
+            Console.WriteLine($"\n\n{FirstName} {LastName} ordered {food} at {restaurant.RestaurantName} restaurant.");
             for (var i = 0; i < companions.Count; i++)
             {
                 if (FirstName == companions[i].FirstName)
@@ -76,4 +76,5 @@ namespace Lunch_Buddies
 
 
     }
+
 }

@@ -11,8 +11,9 @@ namespace Lunch_Buddies
 
             var sam = new LunchBuddy("Sam", "Douglas");
             var charlie = new LunchBuddy("Charlie", "Rose");
-            var whit = new LunchBuddy("Whitney", "Adair");
+            var whit = new LunchBuddy("Whitney", "Adams");
             var alan = new LunchBuddy("Alan", "Fort");
+            var kyle = new LunchBuddy("Kyle", "Grove");
 
             List<LunchBuddy> friends = new List<LunchBuddy>();
 
@@ -20,6 +21,7 @@ namespace Lunch_Buddies
             friends.Add(charlie);
             friends.Add(whit);
             friends.Add(alan);
+            friends.Add(kyle);
 
             sam.Eat();
             Console.WriteLine();
@@ -30,7 +32,7 @@ namespace Lunch_Buddies
             sam.Eat(friends);
             Console.WriteLine();
 
-            sam.Eat("bbq", friends);
+            sam.Eat("French Dip Sandwich", friends);
 
 
         }
